@@ -1,0 +1,43 @@
+{
+    "name": "stolt/json-lines",
+    "description": "Library for the JSON Lines text file format.",
+    "keywords": ["jsonlines", "json"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raphael Stolt",
+            "email": "raphael.stolt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpunit/phpunit": "4.8.*",
+        "stolt/lean-package-validator": "^1.5"
+    },
+    "suggest": {
+        "ext-zlib": "Allow gzip compression of JSON Lines when writing to a file"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rs\\JsonLines\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rs\\JsonLines\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix . -vv || true",
+        "cs-lint": "php-cs-fixer fix --diff --verbose --dry-run",
+        "gitattributes-validation": "lean-package-validator validate --enforce-strict-order"
+    }
+}

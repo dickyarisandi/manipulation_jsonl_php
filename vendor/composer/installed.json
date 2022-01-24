@@ -1,0 +1,61 @@
+{
+    "packages": [
+        {
+            "name": "stolt/json-lines",
+            "version": "v2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raphaelstolt/json-lines.git",
+                "reference": "40702b6b09ceba485b31fe0664890f2ae5409110"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/raphaelstolt/json-lines/zipball/40702b6b09ceba485b31fe0664890f2ae5409110",
+                "reference": "40702b6b09ceba485b31fe0664890f2ae5409110",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "4.8.*",
+                "stolt/lean-package-validator": "^1.5"
+            },
+            "suggest": {
+                "ext-zlib": "Allow gzip compression of JSON Lines when writing to a file"
+            },
+            "time": "2021-02-12T10:28:45+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Rs\\JsonLines\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Stolt",
+                    "email": "raphael.stolt@gmail.com"
+                }
+            ],
+            "description": "Library for the JSON Lines text file format.",
+            "keywords": [
+                "json",
+                "jsonlines"
+            ],
+            "support": {
+                "issues": "https://github.com/raphaelstolt/json-lines/issues",
+                "source": "https://github.com/raphaelstolt/json-lines/tree/v2.1.0"
+            },
+            "install-path": "../stolt/json-lines"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

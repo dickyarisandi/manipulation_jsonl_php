@@ -1,0 +1,5 @@
+{
+    "require": {
+        "stolt/json-lines": "^2.1"
+    }
+}
